@@ -155,22 +155,21 @@ ul {
 .nav-container {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 15px 20px;
+    padding: 5px 20px;
+    height: 85px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
-.logo-text {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--navy);
-    line-height: 1;
+.logo-img {
+    height: 75px;
+    width: auto;
+    display: block;
+    transition: var(--transition);
 }
-.logo-sub {
-    font-size: 0.9rem;
-    color: var(--orange);
-    letter-spacing: 2px;
+.logo-img:hover {
+    transform: scale(1.05);
 }
 
 .main-nav {
@@ -181,6 +180,9 @@ ul {
     display: flex;
     gap: 30px;
     align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .main-nav a {
     color: var(--navy);
@@ -263,7 +265,7 @@ ul {
     letter-spacing: 3px;
     text-transform: uppercase;
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
 }
 .hero-title {
     color: var(--white);
@@ -319,6 +321,8 @@ ul {
     background-color: var(--navy);
     color: var(--white);
     padding: 60px 0;
+    border-bottom: 2px solid var(--orange)  ;
+    
 }
 .cta-banner h2 { color: var(--white); margin-bottom: 10px; }
 
@@ -423,8 +427,8 @@ ul {
     margin-bottom: 60px;
 }
 .footer-col h3 { color: var(--white); margin-bottom: 25px; font-size: 1.3rem; letter-spacing: 0.5px; }
-.footer-logo { display: inline-block; }
-.footer-logo .logo-text { color: var(--white); }
+.footer-logo { display: inline-block; margin-bottom: 10px; }
+.footer-logo-img { height: 85px; filter: brightness(0) invert(1); } /* Make it white for dark footer if needed, or leave it orange/white if SVG supports it */
 .footer-desc { margin-top: 15px; font-size: 0.95rem; line-height: 1.8; color: #a0aec0; }
 .footer-socials { display: flex; gap: 15px; }
 .footer-socials a { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: rgba(255,255,255,0.05); border-radius: 50%; color: var(--white); transition: var(--transition); border: 1px solid rgba(255,255,255,0.1); }
@@ -475,7 +479,7 @@ ul {
         transition: clip-path 0.4s ease-in-out;
     }
     .main-nav.active { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
-    .main-nav ul { flex-direction: column; width: 100%; gap: 15px; }
+    .main-nav ul { position: relative; left: 0; transform: none; flex-direction: column; width: 100%; gap: 15px; }
     .nav-book-btn { margin-left: 0; margin-top: 20px; text-align: center; }
     .contact-info-wrapper { padding-left: 0; margin-top: 40px; }
     .booking-form { padding: 30px 20px; }
@@ -532,7 +536,7 @@ ul {
 
 .partner-card { 
     background: var(--white);
-    padding: 30px 45px;
+    padding: 15px 28px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(10, 25, 47, 0.05);
     font-size: 1.3rem; 
