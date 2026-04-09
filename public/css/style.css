@@ -237,13 +237,17 @@ ul {
     z-index: 1;
 }
 .hero-bg img {
+    position: absolute;
+    top: 0; left: 0;
     width: 100%; height: 100%; object-fit: cover;
+    z-index: 1;
     animation: zoomInOut 20s ease-in-out infinite alternate;
 }
 .hero-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(to right, rgba(10, 25, 47, 0.95) 0%, rgba(10, 25, 47, 0.4) 100%);
+    z-index: 2;
+    background: linear-gradient(to right, rgba(10, 25, 47, 0.9) 0%, rgba(10, 25, 47, 0.1) 100%);
 }
 @keyframes zoomInOut {
     0% { transform: scale(1.0); }
@@ -420,6 +424,7 @@ ul {
 }
 .footer-col h3 { color: var(--white); margin-bottom: 25px; font-size: 1.3rem; letter-spacing: 0.5px; }
 .footer-logo { display: inline-block; }
+.footer-logo .logo-text { color: var(--white); }
 .footer-desc { margin-top: 15px; font-size: 0.95rem; line-height: 1.8; color: #a0aec0; }
 .footer-socials { display: flex; gap: 15px; }
 .footer-socials a { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: rgba(255,255,255,0.05); border-radius: 50%; color: var(--white); transition: var(--transition); border: 1px solid rgba(255,255,255,0.1); }
@@ -437,7 +442,7 @@ ul {
 .footer-icon { flex-shrink: 0; margin-top: 2px; }
 
 /* Bottom Bar */
-.footer-bottom { border-top: 1px solid rgba(255,255,255,0.05); background-color: var(--navy-light); padding: 20px 0; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.05); background-color: var(--navy-light); padding: 10px 0; }
 .footer-bottom-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
 .footer-bottom p { font-size: 0.9rem; margin: 0; }
 .footer-badges { display: flex; gap: 15px; flex-wrap: wrap; }
@@ -451,8 +456,8 @@ ul {
     .footer-badges { justify-content: center; }
     .stats-row { flex-wrap: wrap; gap: 20px; justify-content: center; }
     .hero-title { font-size: 3rem; }
-    .hero-bg { background-position: center; }
-    .hero-overlay { background: linear-gradient(to bottom, rgba(10, 25, 47, 0.8) 0%, rgba(10, 25, 47, 0.95) 100%); }
+    .hero-bg img { object-position: center; }
+    .hero-overlay { background: linear-gradient(to bottom, rgba(10, 25, 47, 0.4) 0%, rgba(10, 25, 47, 0.95) 100%); }
 }
 
 @media (max-width: 768px) {
@@ -482,6 +487,9 @@ ul {
     .hero-cta { flex-direction: column; gap: 15px; justify-content: center; width: 100%; }
     .hero-cta a { width: 100%; }
     
+    /* Footer Mobile Fixes */
+    .footer-container { grid-template-columns: 1fr; gap: 30px; }
+    .footer-col h3 { margin-bottom: 15px; }
     
     /* Top Bar Marquee on Mobile */
     .top-bar {
@@ -516,12 +524,33 @@ ul {
 
 /* ====== NEW TRUST COMPONENTS ====== */
 
-/* Partners Marquee */
-.partners { overflow: hidden; padding: 60px 0; }
-.partner-logos-wrapper { position: relative; width: 100%; overflow: hidden; white-space: nowrap; }
-.partner-logos { display: flex; gap: 80px; align-items: center; width: max-content; animation: scrollPartners 25s linear infinite; }
-.partner-logo { font-size: 1.4rem; font-weight: 800; color: #a5b4cb; text-transform: uppercase; letter-spacing: 2px; }
-.partner-logo:hover { color: var(--navy); }
+/* Partners Marquee Cards */
+.partners { overflow: hidden; padding: 80px 0; background-color: var(--light-grey); }
+.partner-logos-wrapper { position: relative; width: 100%; overflow: hidden; white-space: nowrap; padding: 20px 0; }
+.partner-logos { display: flex; gap: 40px; align-items: center; width: max-content; animation: scrollPartners 35s linear infinite; }
+.partner-logos:hover { animation-play-state: paused; }
+
+.partner-card { 
+    background: var(--white);
+    padding: 30px 45px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(10, 25, 47, 0.05);
+    font-size: 1.3rem; 
+    font-weight: 800; 
+    color: var(--grey); 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.03);
+    cursor: default;
+    display: inline-block;
+}
+.partner-card:hover { 
+    color: var(--orange); 
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(10, 25, 47, 0.1);
+    border-color: rgba(255, 126, 0, 0.2);
+}
 
 @keyframes scrollPartners {
     0% { transform: translateX(0); }
