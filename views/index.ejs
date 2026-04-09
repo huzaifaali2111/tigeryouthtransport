@@ -1,7 +1,11 @@
 <%- include('partials/header') %>
 
 <!-- Hero Section -->
-<section class="hero" style="background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('/images/hero_cargo.png');">
+<section class="hero">
+    <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1586528116311-ad8ed745084c?q=80&w=2000&auto=format&fit=crop" alt="Cargo Logistics and Network">
+        <div class="hero-overlay"></div>
+    </div>
     <div class="container hero-content">
         <h3 class="hero-subtitle">PREMIUM LOGISTICS NETWORK</h3>
         <h1 class="hero-title">Delivering Your Cargo Across the <span class="highlight">Gulf</span></h1>
@@ -22,17 +26,17 @@
         </div>
         <div class="grid grid-3">
             <div class="feature-card">
-                <div class="feature-icon">&#128666;</div>
+                <div class="feature-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg></div>
                 <h3>Extensive Gulf Fleet</h3>
                 <p>A massive, modern fleet of trucks equipped for heavy cargo, operating daily across multiple GCC borders.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">&#9201;</div>
+                <div class="feature-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
                 <h3>On-Time Delivery</h3>
                 <p>Precision logistics ensured through real-time tracking and optimized route management.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">&#128110;</div>
+                <div class="feature-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
                 <h3>Full Cargo Security</h3>
                 <p>Premium insurance coverage and strict security protocols from pick-up to your destination port or warehouse.</p>
             </div>
@@ -48,15 +52,15 @@
                 <h4 class="sub-heading">ABOUT OUR COMPANY</h4>
                 <h2>Your Trusted Partner in <span class="highlight">Middle East Logistics</span></h2>
                 <p>Tiger Youth Transport was established with one goal: to redefine cargo movement in Dubai and the wider Gulf region. We bridge borders with efficiency, ensuring your trade routes remain uninterrupted.</p>
-                <ul class="check-list">
-                    <li>&#10003; 10+ Years of Regional Experience</li>
-                    <li>&#10003; Dedicated Custom Clearance Support</li>
-                    <li>&#10003; State-of-the-Art Warehousing</li>
+                <ul class="check-list" style="list-style: none; padding-left: 0;">
+                    <li style="display: flex; align-items: center; margin-bottom: 10px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 15px;"><polyline points="20 6 9 17 4 12"></polyline></svg> 10+ Years of Regional Experience</li>
+                    <li style="display: flex; align-items: center; margin-bottom: 10px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 15px;"><polyline points="20 6 9 17 4 12"></polyline></svg> Dedicated Custom Clearance Support</li>
+                    <li style="display: flex; align-items: center; margin-bottom: 10px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 15px;"><polyline points="20 6 9 17 4 12"></polyline></svg> State-of-the-Art Warehousing</li>
                 </ul>
                 <a href="/about" class="btn-primary mt-4">Discover More About Us</a>
             </div>
             <div class="about-image-wrapper">
-                <img src="/images/fleet_cargo.png" alt="Tiger Youth Transport Fleet" class="radius-image shadow-large img-fluid">
+                <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1200&auto=format&fit=crop" alt="Tiger Youth Transport Fleet" class="radius-image shadow-large img-fluid">
             </div>
         </div>
     </div>
@@ -65,8 +69,16 @@
 <!-- Partners / Trusted By Section -->
 <section class="partners section-padding bg-light">
     <div class="container text-center">
-        <h4 class="sub-heading mb-4">TRUSTED BY LEADING BUSINESSES</h4>
+        <h4 class="sub-heading mb-5">TRUSTED BY LEADING BUSINESSES</h4>
+    </div>
+    <div class="partner-logos-wrapper">
         <div class="partner-logos">
+            <div class="partner-logo">GlobalTech Industry</div>
+            <div class="partner-logo">UAE Builders Group</div>
+            <div class="partner-logo">Gulf Retail Network</div>
+            <div class="partner-logo">Saudi Energy Corp</div>
+            <div class="partner-logo">Oman Constructors</div>
+            <!-- Duplicated List for seamless infinite loop -->
             <div class="partner-logo">GlobalTech Industry</div>
             <div class="partner-logo">UAE Builders Group</div>
             <div class="partner-logo">Gulf Retail Network</div>
