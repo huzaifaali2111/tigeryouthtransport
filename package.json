@@ -1,0 +1,28 @@
+{
+  "name": "tiger-youth-transport",
+  "version": "1.0.0",
+  "description": "Tiger Youth Transport - Cargo Service Website",
+  "homepage": "https://github.com/huzaifaali2111/tigeryouthtransport#readme",
+  "bugs": {
+    "url": "https://github.com/huzaifaali2111/tigeryouthtransport/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huzaifaali2111/tigeryouthtransport.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,74 @@
+<%- include('partials/header') %>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Book Cargo</h1>
+        <p class="breadcrumb"><a href="/">Home</a> / Book Now</p>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="booking-container">
+            <div class="text-center mb-5">
+                <h2>Request a <span class="highlight">Transport Booking</span></h2>
+                <p>Provide details of your shipment below to receive scheduling and pricing options.</p>
+            </div>
+            
+            <form action="#" method="get" class="custom-form booking-form shadow-large" onsubmit="event.preventDefault(); alert('Booking feature is frontend only for now. Your request is conceptually recorded!');">
+                
+                <h4 class="form-section-title">Sender Details</h4>
+                <div class="grid grid-2">
+                    <div class="input-group">
+                        <label>Company Name</label>
+                        <input type="text" required placeholder="Your Company Ltd">
+                    </div>
+                    <div class="input-group">
+                        <label>Contact Number</label>
+                        <input type="tel" required placeholder="+971 50 XXXXXXX">
+                    </div>
+                </div>
+
+                <h4 class="form-section-title mt-4">Shipment Details</h4>
+                <div class="grid grid-2">
+                    <div class="input-group">
+                        <label>Cargo Type</label>
+                        <select required>
+                            <option value="">Select Cargo Type</option>
+                            <option value="general">General Cargo</option>
+                            <option value="perishable">Perishable Goods</option>
+                            <option value="hazardous">Hazardous Materials</option>
+                            <option value="heavy">Heavy Machinery</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Approx. Weight (KG)</label>
+                        <input type="number" required placeholder="e.g. 5000">
+                    </div>
+                </div>
+
+                <div class="grid grid-2">
+                    <div class="input-group">
+                        <label>Pickup Location (City/Country)</label>
+                        <input type="text" required placeholder="e.g. Dubai, UAE">
+                    </div>
+                    <div class="input-group">
+                        <label>Destination (City/Country)</label>
+                        <input type="text" required placeholder="e.g. Riyadh, KSA">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Additional Notes / Special Requirements</label>
+                    <textarea rows="4" placeholder="Any specific handling instructions?"></textarea>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn-primary btn-large">Submit Booking Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<%- include('partials/footer') %>
