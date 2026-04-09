@@ -123,9 +123,11 @@ ul {
 /* ====== HEADER ====== */
 .top-bar {
     background-color: var(--navy);
-    color: var(--grey);
-    font-size: 0.9rem;
-    padding: 8px 0;
+    color: var(--light-grey);
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 10px 0;
+    letter-spacing: 0.5px;
 }
 .top-bar-container {
     max-width: var(--max-width);
@@ -133,8 +135,15 @@ ul {
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-.top-info span { margin-right: 20px; }
+.top-info {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
 .main-header {
     background-color: var(--white);
@@ -164,6 +173,10 @@ ul {
     letter-spacing: 2px;
 }
 
+.main-nav {
+    display: flex;
+    align-items: center;
+}
 .main-nav ul {
     display: flex;
     gap: 30px;
@@ -189,8 +202,9 @@ ul {
     width: 100%;
 }
 .nav-book-btn {
-    margin-left: 20px;
-    padding: 10px 20px;
+    margin-left: 30px;
+    padding: 8px 18px;
+    font-size: 0.9rem;
 }
 
 .mobile-toggle {
@@ -423,6 +437,36 @@ ul {
     .nav-book-btn { margin-left: 0; margin-top: 20px; text-align: center; }
     .contact-info-wrapper { padding-left: 0; margin-top: 40px; }
     .booking-form { padding: 30px 20px; }
+    
+    /* Top Bar Marquee on Mobile */
+    .top-bar {
+        padding: 5px 0;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .top-bar-container {
+        display: inline-block;
+        padding: 0;
+        width: max-content;
+        max-width: none;
+        animation: marquee 20s linear infinite;
+    }
+    .top-info, .top-location {
+        display: inline-block;
+        gap: 0;
+    }
+    .top-info span {
+        display: inline-block;
+        margin-right: 30px;
+    }
+    .top-location span {
+        display: inline-block;
+    }
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100vw); }
+    100% { transform: translateX(-100%); }
 }
 
 /* ====== NEW TRUST COMPONENTS ====== */
