@@ -1,76 +1,93 @@
 <%- include('partials/header') %>
 
-<section class="page-header">
-    <div class="container">
-        <h1>Contact Us</h1>
-        <p class="breadcrumb"><a href="/">Home</a> / Contact</p>
-    </div>
-</section>
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="breadcrumb"><a href="/">Home</a> / Contact</p>
+        </div>
+    </section>
 
-<section class="section-padding">
-    <div class="container">
-        <div class="grid grid-2">
-            <!-- Form Area -->
-            <div class="form-wrapper">
-                <h2>Get In Touch</h2>
-                <p class="mb-4">Fill out the form below and our logistics representatives will get back to you immediately.</p>
-                
-                <form action="#" method="get" class="custom-form" onsubmit="event.preventDefault(); alert('Message feature is in frontend mode only for now. We will contact you soon!');">
-                    <div class="input-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required placeholder="John Doe">
-                    </div>
-                    <div class="input-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required placeholder="john@company.com">
-                    </div>
-                    <div class="input-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required placeholder="General Inquiry">
-                    </div>
-                    <div class="input-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="How can we help?"></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary btn-full">Send Message</button>
-                </form>
-            </div>
+    <section class="section-padding">
+        <div class="container">
+            <div class="grid grid-2">
+                <!-- Form Area -->
+                <div class="form-wrapper">
+                    <h2>Get In Touch</h2>
+                    <p class="mb-4">Fill out the form below and our logistics representatives will get back to you
+                        immediately.</p>
 
-            <!-- Details Area -->
-            <div class="contact-info-wrapper">
-                <h2>Headquarters</h2>
-                <p>We are centrally located in Dubai to optimally serve the entire GCC.</p>
-                
-                <div class="info-item">
-                    <div class="info-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
-                    <div>
-                        <h4>Address</h4>
-                        <p>Al Quoz Industrial Area 3, Dubai, United Arab Emirates</p>
-                    </div>
-                </div>
-                
-                <div class="info-item">
-                    <div class="info-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
-                    <div>
-                        <h4>Email Us</h4>
-                        <p>info@tigeryouthtransport.com<br>support@tigeryouthtransport.com</p>
-                    </div>
+                    <form action="#" method="get" class="custom-form"
+                        onsubmit="event.preventDefault(); alert('Message feature is in frontend mode only for now. We will contact you soon!');">
+                        <div class="input-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="john@company.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="General Inquiry">
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="How can we help?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">Send Message</button>
+                    </form>
                 </div>
 
-                <div class="info-item">
-                    <div class="info-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
-                    <div>
-                        <h4>Call Us</h4>
-                        <p>+971 50 123 4567<br>+971 4 987 6543</p>
-                    </div>
-                </div>
+                <!-- Details Area -->
+                <div class="contact-info-wrapper">
+                    <h2>Headquarters</h2>
+                    <p>We are centrally located in Dubai to optimally serve the entire GCC.</p>
 
-                <div class="map-placeholder">
-                    <span>Google Maps Integration Area</span>
+                    <div class="info-item">
+                        <div class="info-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg></div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Al Quoz Industrial Area 3, Dubai, United Arab Emirates</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg></div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>info@tigeryouthtransport.com<br>support@tigeryouthtransport.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg></div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+971 54 739 2605<br>+971 4 987 6543</p>
+                        </div>
+                    </div>
+
+                    <div class="map-placeholder">
+                        <span>Google Maps Integration Area</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<%- include('partials/footer') %>
+    <%- include('partials/footer') %>
