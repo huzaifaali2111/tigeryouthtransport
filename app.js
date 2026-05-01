@@ -36,6 +36,10 @@ app.get('/book', (req, res) => {
     res.render('book', { title: 'Book Now | Tiger Youth Transport' });
 });
 
+app.get('/team', (req, res) => {
+    res.render('team', { title: 'Our Team | Tiger Youth Transport' });
+});
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Tiger Youth Transport Server running on http://localhost:${PORT}`);
