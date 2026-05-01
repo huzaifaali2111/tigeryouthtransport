@@ -1124,6 +1124,28 @@ ul {
     background: var(--orange);
 }
 
+.manager-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.manager-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: var(--navy);
+    color: var(--white);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.manager-socials a:hover {
+    background-color: var(--orange);
+    transform: translateY(-3px);
+}
+
 .team-role {
     color: var(--orange);
     font-weight: 700;
